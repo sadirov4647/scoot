@@ -48,7 +48,7 @@ img {
     padding-top: 22px;
     padding-bottom: 21px;
     display: flex;
-    
+    white-space: nowrap;
     align-items: center;
 }
 .site-logo{
@@ -147,4 +147,51 @@ img {
     width: 187px;
     height: 64px;
     margin-left: 801px;
+}
+
+/* Order section */
+.site-main{
+    padding-top: 44px;
+}
+.order-section{
+    margin-bottom: 147px;
+}
+.order-card-list{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.order-card-list li:not(:last-child){
+    margin-right: 30px;
+}
+.order-card-item{
+    width: 340px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.order-card-item::before{
+    content: "";
+    background: url(/images/header/locate.png) no-repeat;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 40px;
+}
+.order-card-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -1.07143px;
+    color: var(--titles-color);
+    margin-bottom: 27px;
+    margin-top: 0;
+}
+.order-card-description{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 167%;
+    color: #939CAA;
+    color: var(--description-color);
 }
