@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+:root {
+    --body-color: #434343;
+    --btn-color: #FCB72B;
+    --titles-color:#495567;
+    --description-color:#939CAA;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", "Lexend Deca", sans-serif;
+    font-display: swap;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Header */
+.site-nav{
+    padding-top: 22px;
+    padding-bottom: 21px;
+    display: flex;
+    
+    align-items: center;
+}
+.site-logo{
+    margin-right: 59px;
+}
+.site-logo a{
+    display: block;
+}
+.nav-list{
+    display: flex;
+    margin-right: auto;
+    list-style-type: none;
+    padding: 0;
+}
+.nav-items a{
+    text-decoration: none;
+    color: var(--description-color);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+}
+.nav-items:not(:last-child){
+    margin-right: 32px;
+}
+.get-button{
+    padding: 14px 39px;
+    background-color: var(--btn-color);
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* Hero */
+.hero-section{
+    background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("/images/header/Bitmapback.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 116px;
+}
+.hero-wrapper{
+    padding-top: 153px;
+    padding-bottom: 152px;
+    width: 500px;
+}
+.hero-wrapper-description{
+    width: 405px;
+    margin-left: auto;
+    position: relative;
+}
+.hero-wrapper-description::before{
+    content: "";
+    position: absolute;
+    background: url(/images/hero/chiziq.png) no-repeat;
+    width: 203px;
+    height: 15px;
+    left: -255px;
+    top: 45px;
+}
+.hero-wrapper-description::after{
+    content: "";
+    position: absolute;
+    background: url(/images/hero/strelka.png) no-repeat;
+    width: 455px;
+    height: 155px;
+    left: 440px;
+    top: 45px;
+}
+.hero-title{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.hero-description{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.oval-btn{
+    position: relative;
+}
+.oval-btn::after{
+    content: "";
+    position: absolute;
+    background: url(/images/hero/aylana.png) no-repeat;
+    width: 187px;
+    height: 64px;
+    margin-left: 801px;
+}
