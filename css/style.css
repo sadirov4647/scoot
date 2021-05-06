@@ -194,6 +194,7 @@ img {
     line-height: 167%;
     color: #939CAA;
     color: var(--description-color);
+    margin: 0;
 }
 
 /* Services */
@@ -393,11 +394,187 @@ img {
 .about-services-wrapper-para{
     margin: 0;
 }
-.urban::before{
+.about-services-wrapper-description{
+    padding-top: 50px;
+}
+.about-services-wrapper-description-urban::before{
     content: "";
     position: absolute;
     background: url(/images/about/header/urban.png) no-repeat;
     width: 620px;
     height: 450px;
+    top: -30px;
     left: -120px;
+}
+.about-services-wrapper-description-urban{
+    width: 445px;
+    padding-bottom: 110px;
+    margin-left: auto;
+}
+.about-services-item:not(:last-child){
+    margin-bottom: 190px;
+}
+
+
+
+/* Values Section */
+.about-values-title{
+    margin: 0;
+    margin-bottom: 85px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: var(--titles-color);
+}
+.about-values-item{
+    align-items: center;
+    text-align: center;
+    width: 340px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.about-values-item::before{
+    content: "";
+    background: url(/images/about/header/tech.png) no-repeat;
+    width: 335px;
+    height: 355px;
+    margin-bottom: 32px;
+}
+.about-integrity::before{
+    background: url(/images/about/header/integrity.png) no-repeat;
+}
+.about-community::before{
+    background: url(/images/about/header/community.png) no-repeat;
+}
+
+
+
+/* # FAQ
+——————————————— */
+
+.question-section{
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+.question-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: var(--titles-color);
+}
+.faq-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-wrapper-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--titles-color);
+    margin-right: 30px;
+    margin: 0;
+}
+.answer-description{
+    margin: 0;
+}
+.faq-list,
+.faq-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 730px;
+}
+
+.faq-list ul {
+    margin-left: 0;
+}
+
+.faq-list li {
+    border: none;
+    border-radius: 3px;
+    background: #fff;
+    margin-bottom: 15px;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition:    all 0.3s ease-in-out;
+    -ms-transition:     all 0.3s ease-in-out;
+    -o-transition:      all 0.3s ease-in-out;
+    transition:         all 0.3s ease-in-out;
+    
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(38,50,56,0.15);	
+    -moz-box-shadow: 0px 5px 30px 0px rgba(38,50,56,0.15);	
+    box-shadow: 0px 5px 30px 0px rgba(38,50,56,0.15);	
+}
+
+.faq-list li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 117%;
+    color: var(--titles-color);
+    letter-spacing: -1.07143px;
+}
+
+.faq-list li:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(38,50,56,0.15);	
+    -moz-box-shadow: 0px 3px 10px 0px rgba(38,50,56,0.15);
+    box-shadow: 0px 3px 10px 0px rgba(38,50,56,0.15);
+}
+
+.faq-list li .question {
+    display: block;
+    font-weight: 500;
+    border: none;
+    padding: 25px 35px 22px 60px;
+    position: relative;
+}
+
+.faq-list li .question.on {
+    background: #F5F7F8;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #263238;
+}
+
+.faq-list li .question:before {
+    content: "";
+    background: url(/images/about/question/go.png) no-repeat;
+    width: 18px;
+    height: 14px;
+    left: 25px;
+    margin-right: 10px;
+    position: absolute;
+    top: 29px;
+}
+
+.faq-list li .question.on:before {
+    content: "";
+    background: url(/images/about/question/down.png) no-repeat;
+    width: 18px;
+    height: 14px;
+}
+
+.single-post  .faq-list li .answer {
+    border-top: 1px solid #ECEFF1;
+    display: none;
+    font-size: 16px;
+    padding: 25px 35px 25px;
+}
+.it-works{
+    padding: 32px 40px;
+}
+.answer{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 32px;
+    color: var(--titles-color);
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
 }
