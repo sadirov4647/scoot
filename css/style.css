@@ -59,9 +59,10 @@ img {
 }
 .nav-list{
     display: flex;
-    margin-right: auto;
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    margin-right: auto;
 }
 .nav-items a{
     text-decoration: none;
@@ -69,24 +70,35 @@ img {
     font-weight: bold;
     font-size: 15px;
     line-height: 25px;
+    transition: ease 0.3s;
+}
+.nav-items a:hover{
+    color: var(--btn-color);
 }
 .nav-items:not(:last-child){
     margin-right: 32px;
 }
 .get-button{
-    padding: 14px 39px;
+    padding: 15px 37px;
     background-color: var(--btn-color);
-    border: none;
+    border: 1px solid var(--btn-color);
     color: #ffff;
     cursor: pointer;
     border-radius: 10px;
+    white-space: nowrap;
+    transition: ease 0.3s;
+}
+.get-button:hover{
+    background-color: #fff;
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
 }
 
 
 /* Hero */
 .hero-section{
     background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
-    url("/images/header/Bitmapback.png");
+    url("/images/main/header/Bitmapback.png");
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 116px;
@@ -146,7 +158,7 @@ img {
     background: url(/images/main/hero/aylana.png) no-repeat;
     width: 187px;
     height: 64px;
-    margin-left: 801px;
+    margin-left: 802px;
 }
 
 /* Order section */
@@ -173,10 +185,18 @@ img {
 }
 .order-card-item::before{
     content: "";
-    background: url(/images/main/header/locate.png) no-repeat;
     width: 96px;
     height: 96px;
     margin-bottom: 40px;
+}
+.locate::before{
+    background: url(/images/main/header/locate.png) no-repeat;
+}
+.scooter::before{
+    background: url(/images/main/header/scooter.png) no-repeat;
+}
+.enjoy::before{
+    background: url(/images/main/header/ride.png) no-repeat;
 }
 .order-card-title{
     font-weight: bold;
@@ -334,6 +354,10 @@ img {
     font-weight: bold;
     font-size: 15px;
     line-height: 25px;
+    transition: ease 0.3s;
+}
+.footer-item a:hover{
+    color: var(--btn-color);
 }
 .footer-item:not(:last-child){
     margin-right: 32px;
@@ -347,18 +371,27 @@ img {
 .social-icons-item:not(:last-child){
     margin-right: 24px;
 }
+.social-icons-item img{
+    transition: ease 0.3s;
+}
+.social-icons-item img:hover{
+    transform: rotate(360deg);
+    filter: grayscale(90%);
+}
 
 
 /* About Page */
+.short-hero{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 72px 0;
+}
 .about-hero{
     background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
     url("/images/about/header/Bitmap.png");
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.about-header-title{
+.pages-header-title{
     margin: 0;
-    padding: 72px 0;
     font-weight: bold;
     font-size: 56px;
     line-height: 56px;
@@ -367,7 +400,7 @@ img {
     display: flex;
     position: relative;
 }
-.about-header-title::after{
+.pages-header-title::after{
     content: "";
     background: url(/images/about/header/hero.png) no-repeat;
     width: 203px;
@@ -418,7 +451,7 @@ img {
 
 
 /* Values Section */
-.about-values-title{
+.values-title{
     margin: 0;
     margin-bottom: 85px;
     font-weight: bold;
@@ -428,7 +461,7 @@ img {
     letter-spacing: -2.14286px;
     color: var(--titles-color);
 }
-.about-values-item{
+.values-item{
     align-items: center;
     text-align: center;
     width: 340px;
@@ -436,7 +469,7 @@ img {
     display: flex;
     flex-direction: column;
 }
-.about-values-item::before{
+.values-item::before{
     content: "";
     background: url(/images/about/header/tech.png) no-repeat;
     width: 335px;
@@ -470,6 +503,9 @@ img {
 .faq-wrapper{
     display: flex;
     justify-content: space-between;
+}
+.faq-wrapper:not(:last-child){
+    margin-bottom: 64px;
 }
 .faq-wrapper-title{
     font-weight: bold;
@@ -577,4 +613,136 @@ img {
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
+}
+
+/* Careers  Page*/
+.careers-hero{
+    background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("/images/careers/Bitmap.png");
+}
+.careers-header-title{
+    margin: 0;
+}
+.careers-services-section{
+    padding-top: 175px;
+    padding-bottom: 110px;
+}
+.mission::after{
+    content: "";
+    position: absolute;
+    background: url(/images/careers/mission.png) no-repeat;
+    width: 740px;
+    height: 470px;
+    right: -119px;
+    top: -30px;
+}
+.careers-values-section{
+    padding-bottom: 160px;
+}
+.careers-card-list{
+    margin-bottom: 120px;
+}
+
+.teams-list{
+    padding: 0;
+    margin: 0;
+}
+.teams-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:32px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 64px;
+    background-color: #F2F5F9;
+}
+.teams-item:not(:last-child){
+    margin-bottom: 24px;
+}
+.teams-wrapper{
+    margin-right: 500px;
+}
+.teams-wrapper-title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -1.07143px;
+    color: var(--titles-color);
+    margin-bottom: 8px;
+}
+.teams-wrapper-description{
+    margin: 0;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 167%;
+    color: var(--titles-color);
+}
+
+
+/* Location Page*/
+
+.image-section{
+    padding-top: 120px;
+    position: relative;
+}
+.jakarta{
+    position: absolute;
+    right: 423px;
+    top: 150px;
+    background: url(/images/location/jakarta.png) no-repeat;
+    width: 190px;
+    height: 90px;
+}
+.yokohama{
+    position: absolute;
+    background: url(/images/location/yokohama.png) no-repeat;
+    width: 190px;
+    height: 90px;
+    right: 180px;
+    bottom: 300px;
+}
+.london{
+    position: absolute;
+    left: 280px;
+    top: 310px;
+    background: url(/images/location/london.png) no-repeat;
+    width: 190px;
+    height: 90px;
+}
+.new-york{
+    position: absolute;
+    left: 450px;
+    top: 70px;
+    background: url(/images/location/london.png) no-repeat;
+    width: 190px;
+    height: 90px;
+}
+
+/* Location listed */
+.location-listed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+.listed-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--titles-color);
+    letter-spacing: -2.14286px;
+    margin: 0;
+    margin-right: 30px;
+}
+.listed-description{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 167%;
+    width: 445px;
+    margin: 0;
+    color: var(--description-color);
+    margin-right: 105px;
 }
