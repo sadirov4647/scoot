@@ -761,7 +761,7 @@ img {
         margin-right: auto;
     }
     .nav-list{
-        margin-right: 94px;
+        margin-right: 129px;
     }
     .hero-section{
         background-size: cover;
@@ -878,5 +878,40 @@ img {
     }
     .footer-list{
         margin-right: 153px;
+    }
+    
+    /* About page */
+    .pages-header-title::after {
+        right: -20px;
+    }
+    .about-services-wrapper-description-urban{
+        width: 573px;
+        margin: 0 auto;
+        margin-top: 455px;
+        align-items: center;
+        text-align: center;
+    }
+    .about-services-wrapper-description-urban::before{
+        left: -20px;
+    }
+    .about-community{
+        margin: 0 auto;
+    }
+    .question-title{
+        margin-bottom: 62px;
+    }
+    .faq-wrapper{
+        display: block;
+    }
+    .faq-wrapper-title{
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .faq-list li{
+        margin-bottom: 24px;
+    }
+    .it-works{
+        width: 689px;
+        margin: 0 auto;
     }
 }
