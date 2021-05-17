@@ -754,7 +754,7 @@ img {
 /* Responsive */
 @media only screen and (min-width: 433px) and (max-width: 768px){
     .container{
-        max-width: 768px;
+        max-width: 808px;
         padding-left: 20px;
         padding-right: 20px;
         margin-left: auto;
@@ -913,5 +913,37 @@ img {
     .it-works{
         width: 689px;
         margin: 0 auto;
+    }
+    
+    
+    .teams-wrapper{
+        margin-right: 207px;
+    }
+    .teams-item{
+        padding: 34px 48px;
+    }
+    .careers-values-section{
+        padding-bottom: 120px;
+    }
+    
+    
+    .new-york{
+        left: 540px;
+        top: 245px;
+    }
+    .location-listed{
+        flex-direction: column;
+        width: 573px;
+        margin: 0 auto;
+    }
+    .listed-title{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .listed-description{
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 40px;
     }
 }
