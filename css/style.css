@@ -226,7 +226,7 @@ img {
     padding: 0;
     margin: 0;
 }
-.services-item{
+.services-item:not(:last-child){
     margin-bottom: 110px;
 }
 .services-wrapper{
@@ -272,6 +272,7 @@ img {
     right: -119px;
     top: -30px;
 }
+
 .services-wrapper-title{
     font-weight: bold;
     font-size: 48px;
@@ -745,4 +746,137 @@ img {
     margin: 0;
     color: var(--description-color);
     margin-right: 105px;
+}
+
+
+
+
+/* Responsive */
+@media only screen and (min-width: 433px) and (max-width: 768px){
+    .container{
+        max-width: 768px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-list{
+        margin-right: 94px;
+    }
+    .hero-section{
+        background-size: cover;
+        margin-bottom: 0;
+    }
+    .hero-title{
+        text-align: center;
+    }
+    .hero-wrapper{
+        width: 573px;
+        margin: 0 auto;
+        padding-bottom: 230px;
+    }
+    .hero-wrapper-description{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .hero-wrapper-description::before{
+        display: none;
+    }
+    .hero-wrapper-description::after{
+        content: "";
+        position: absolute;
+        background: url(/images/main/hero/strelka.png) no-repeat;
+        width: 455px;
+        height: 155px;
+        left: -220px;
+        top: 205px;
+    }
+    .oval-btn::after {
+        content: "";
+        position: absolute;
+        background: url(/images/main/hero/aylana.png) no-repeat;
+        width: 187px;
+        height: 64px;
+        margin-left: 144px;
+        top: 165px;
+    }
+    
+    .site-main{
+        padding-top: 122px;
+    }
+    .order-card-list{
+        display: block;
+    }
+    .order-card-item{
+        width: 398px;
+        margin: 0 auto;
+        list-style-type: none;
+        display: block;
+        position: relative;
+        right: -79px;
+    }
+    .order-card-description{
+        
+    }
+    .order-card-item::before{
+        position: absolute;
+        margin: 0;
+        left: -164px;
+    }
+    .order-card-list li:not(:last-child) {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    
+    .services-section{
+        padding-bottom: 104px;
+    }
+    .services-wrapper::after{
+        right: 0;
+        left: 10px;
+        display: block;
+    }
+    .services-wrapper-description{
+        margin: 0 auto;
+        margin-top: 490px;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .services-wrapper-description-city{
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        margin-top: 520px;
+    }
+    .services-wrapper-title{
+        width: 457px;
+        margin:0 auto;
+        margin-bottom: 40px;
+    }
+    .city::before{
+        left: -20px;
+    }
+    .payments::after{
+        left: 138px;
+    }
+    .sign-wrapper{
+        flex-direction: column;
+        padding-top: 62px;
+        padding-bottom: 41px;
+    }
+    .sign-title{
+        width: 457px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .main-footer{
+        padding: 0;
+    }
+    .footer-list{
+        margin-right: 153px;
+    }
 }
