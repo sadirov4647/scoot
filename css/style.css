@@ -816,9 +816,6 @@ img {
         position: relative;
         right: -79px;
     }
-    .order-card-description{
-        
-    }
     .order-card-item::before{
         position: absolute;
         margin: 0;
@@ -944,6 +941,138 @@ img {
     .listed-description{
         text-align: center;
         margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width: 432px){
+    .container{
+        max-width: 472px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    .site-nav button{
+        display: none;
+    }
+    .site-logo{
+        margin: 0;
+        margin-left: 100px;
+    }
+    .hero-wrapper{
+        padding-top: 115px;
+        padding-bottom: 179px;
+        width: 311px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero-wrapper-description{
+        width: 311px;
+        margin-left: 0;
+    }
+    .hero-section{
+        background-size: cover;
+    }
+    .hero-wrapper-description::before{
+        display: none;
+    }
+    .hero-wrapper-description::after{
+        left: -340px;
+        top: 190px;
+    }
+    .oval-btn::after{
+        display: none;
+    }
+    
+    .order-card-list{
+        display: block;
+    }
+    .order-card-item{
+        align-items: center;
+        text-align: center;
+        width: 311px;
+        margin: 0 auto;
+    }
+    .order-card-list li:not(:last-child){
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    .services-wrapper-description{
+        width: 311px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 375px;
+    }
+    .telemetry::after{
+        width: 522px;
+        height: 320px;
+        right: -125px;
+        top: 0px;
+        background-size: contain;
+    }
+    .city::before{
+        width: 522px;
+        height: 385px;
+        left: -120px;
+        background-size: contain;
+    }
+    .services-wrapper-description-city{
+        width: 311px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 436px;
+    }
+    .payments::after{
+        width: 522px;
+        height: 390px;
+        right: -119px;
+        background-size: contain;
+    }
+    
+    .sign-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 311px;
+        margin: 0 auto;
+    }
+    .sign-title{
+        margin: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .main-footer{
+        background-size: cover;
+    }
+    
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 85px;
+    }
+    .footer-wrapper{
+        padding-top: 64px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-list li{
+        margin-right: 0;
+    }
+    .footer-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .footer-item-image{
         margin-bottom: 40px;
     }
 }
