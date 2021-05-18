@@ -1131,4 +1131,61 @@ img {
         margin: 0 auto;
         margin-bottom: 64px;
     }
+
+    /* Careers page */
+    .mission::after{
+        width: 522px;
+        height: 330px;
+        right: -119px;
+        top: -30px;
+        background-size: contain;
+    }
+    .teams-item{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .teams-wrapper{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    /* Location page */
+    .location-listed {
+        width: 331px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 120px;
+        padding-top: 120px;
+        margin-top: 250px;
+    }
+    .image-section{
+        padding-top: 50px;
+    }
+    .listed-title{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .listed-description{
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: inherit;
+    }
+    .yokohama{
+        bottom:-120px;
+        left: 100px;
+    }
+    .london{
+        left: 100px;
+        top: 370px;
+    }
+    .new-york{
+        top: 470px;
+        left: 100px;
+    }
+    .jakarta{
+        right: 140px;
+        top: 180px;
+    }
 }
