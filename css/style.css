@@ -963,7 +963,7 @@ img {
     }
     .site-logo{
         margin: 0;
-        margin-left: 100px;
+        margin-left: 140px;
     }
     .hero-wrapper{
         padding-top: 115px;
@@ -1074,5 +1074,61 @@ img {
     }
     .footer-item-image{
         margin-bottom: 40px;
+    }
+    
+    /* About page */
+    .pages-header-title{
+        display: block;
+        text-align: center;
+    }
+    .pages-header-title::after{
+        display: none;
+    }
+    
+    .mobility::after{
+        width: 540px;
+        height: 340px;
+        right: -135px;
+        top: 0;
+        background-size: contain;
+    }
+    .about-services-wrapper-description-urban::before{
+        width: 500px;
+        height: 380px;
+        top: -30px;
+        left: -120px;
+        background-size: contain;
+    }
+    .about-services-wrapper-description-urban{
+        width: 331px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 110px;
+        margin-top: 375px;
+        text-align: center;
+    }
+    .values-item{
+        margin: 0 auto;
+        width: 331px;
+    }
+
+    .faq-wrapper{
+        flex-direction: column;
+        width: 331px;
+        margin: 0 auto;
+    }
+    .faq-list, .faq-list li{
+        width: 331px;
+    }
+    .faq-wrapper-title{
+        margin-bottom: 32px;
+    }
+    .it-works{
+        width: 331px;
+    }
+    .faq-wrapper:not(:last-child) {
+        
+        margin: 0 auto;
+        margin-bottom: 64px;
     }
 }
