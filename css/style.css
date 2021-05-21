@@ -22,7 +22,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -768,9 +768,11 @@ img {
         padding-right: 20px;
         margin-left: auto;
         margin-right: auto;
+        overflow-x: hidden !important;
     }
+    
     .nav-list{
-        margin-right: 129px;
+        margin-right: auto;
     }
     .hero-section{
         background-size: cover;
@@ -780,7 +782,7 @@ img {
         text-align: center;
     }
     .hero-wrapper{
-        width: 573px;
+        width: 100%;
         margin: 0 auto;
         padding-bottom: 230px;
     }
@@ -796,7 +798,7 @@ img {
         content: "";
         position: absolute;
         background: url(/images/main/hero/strelka.png) no-repeat;
-        width: 455px;
+        width: 100%;
         height: 155px;
         left: -220px;
         top: 205px;
@@ -805,7 +807,7 @@ img {
         content: "";
         position: absolute;
         background: url(/images/main/hero/aylana.png) no-repeat;
-        width: 187px;
+        width: 100%;
         height: 64px;
         margin-left: 144px;
         top: 165px;
@@ -818,7 +820,6 @@ img {
         display: block;
     }
     .order-card-item{
-        width: 398px;
         margin: 0 auto;
         list-style-type: none;
         display: block;
@@ -842,6 +843,7 @@ img {
     .services-wrapper::after{
         right: 0;
         left: 10px;
+        width: 100%;
         display: block;
     }
     .services-wrapper-description{
@@ -859,15 +861,17 @@ img {
         margin-top: 520px;
     }
     .services-wrapper-title{
-        width: 457px;
+        width: 100%;
         margin:0 auto;
         margin-bottom: 40px;
     }
     .city::before{
+        width: 100%;
         left: -20px;
     }
     .payments::after{
-        left: 138px;
+        width: 100%;
+        left: 0;
     }
     .sign-wrapper{
         flex-direction: column;
@@ -875,7 +879,7 @@ img {
         padding-bottom: 41px;
     }
     .sign-title{
-        width: 457px;
+        width: 100%;
         text-align: center;
         margin-bottom: 40px;
     }
@@ -891,7 +895,7 @@ img {
         right: -20px;
     }
     .about-services-wrapper-description-urban{
-        width: 573px;
+        width: 100%;
         margin: 0 auto;
         margin-top: 455px;
         align-items: center;
@@ -917,7 +921,7 @@ img {
         margin-bottom: 24px;
     }
     .it-works{
-        width: 689px;
+        width: 100%;
         margin: 0 auto;
     }
     
@@ -939,7 +943,7 @@ img {
     }
     .location-listed{
         flex-direction: column;
-        width: 573px;
+        width: 100%;
         margin: 0 auto;
     }
     .listed-title{
@@ -1054,12 +1058,12 @@ img {
     .hero-wrapper{
         padding-top: 115px;
         padding-bottom: 179px;
-        width: 311px;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
     }
     .hero-wrapper-description{
-        width: 311px;
+        width: 100%;
         margin-left: 0;
     }
     .hero-section{
@@ -1093,7 +1097,6 @@ img {
     .order-card-item{
         align-items: center;
         text-align: center;
-        width: 311px;
         margin: 0 auto;
     }
     .order-card-list li:not(:last-child){
@@ -1102,32 +1105,32 @@ img {
     }
     
     .services-wrapper-description{
-        width: 311px;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
         margin-top: 375px;
     }
     .telemetry::after{
-        width: 400px;
+        width: 100%;
         height: 320px;
         right: -20px;
         top: 0px;
         background-size: contain;
     }
     .city::before{
-        width: 522px;
+        width: 100%;
         height: 385px;
-        left: -120px;
+        left: -0;
         background-size: contain;
     }
     .services-wrapper-description-city{
-        width: 311px;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
         margin-top: 436px;
     }
     .payments::after{
-        width: 400px;
+        width: 100%;
         height: 390px;
         right: -20px;
         background-size: contain;
@@ -1137,7 +1140,7 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 311px;
+        width: 100%;
         margin: 0 auto;
     }
     .sign-title{
@@ -1183,21 +1186,21 @@ img {
     }
     
     .mobility::after{
-        width: 540px;
+        width: 100%;
         height: 340px;
         right: -135px;
         top: 0;
         background-size: contain;
     }
     .about-services-wrapper-description-urban::before{
-        width: 500px;
+        width: 100%;
         height: 380px;
         top: -30px;
         left: -120px;
         background-size: contain;
     }
     .about-services-wrapper-description-urban{
-        width: 331px;
+        width: 100%;
         margin: 0 auto;
         padding: 0;
         margin-bottom: 110px;
@@ -1206,22 +1209,22 @@ img {
     }
     .values-item{
         margin: 0 auto;
-        width: 331px;
+        width: 100%;
     }
     
     .faq-wrapper{
         flex-direction: column;
-        width: 331px;
+        width: 100%;
         margin: 0 auto;
     }
     .faq-list, .faq-list li{
-        width: 331px;
+        width: 100%;
     }
     .faq-wrapper-title{
         margin-bottom: 32px;
     }
     .it-works{
-        width: 331px;
+        width: 100%;
     }
     .faq-wrapper:not(:last-child) {
         
@@ -1231,7 +1234,7 @@ img {
     
     /* Careers page */
     .mission::after{
-        width: 522px;
+        width: 100%;
         height: 330px;
         right: -119px;
         top: -30px;
@@ -1248,7 +1251,7 @@ img {
     
     /* Location page */
     .location-listed {
-        width: 331px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
