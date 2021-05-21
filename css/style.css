@@ -763,7 +763,7 @@ img {
 /* Responsive */
 @media only screen and (min-width: 433px) and (max-width: 768px){
     .container{
-        max-width: 808px;
+        max-width: 768px;
         padding-left: 20px;
         padding-right: 20px;
         margin-left: auto;
