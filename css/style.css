@@ -800,7 +800,7 @@ img {
         background: url(/images/main/hero/strelka.png) no-repeat;
         width: 100%;
         height: 155px;
-        left: -220px;
+        left: -120px;
         top: 205px;
     }
     .oval-btn::after {
@@ -809,7 +809,7 @@ img {
         background: url(/images/main/hero/aylana.png) no-repeat;
         width: 100%;
         height: 64px;
-        margin-left: 144px;
+        margin-left:184px;
         top: 165px;
     }
     
@@ -841,8 +841,7 @@ img {
         padding-bottom: 104px;
     }
     .services-wrapper::after{
-        right: 0;
-        left: 10px;
+        
         width: 100%;
         display: block;
         background-size: contain;
@@ -867,6 +866,7 @@ img {
         margin-bottom: 40px;
     }
     .city::before{
+        right: 0;
         width: 100%;
         left: -20px;
         background-size: contain;
@@ -1044,8 +1044,6 @@ img {
         padding-bottom: 104px;
     }
     .services-wrapper::after{
-        right: 0;
-        left: 10px;
         width: 100%;
         display: block;
         background-size: contain;
