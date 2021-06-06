@@ -845,6 +845,7 @@ img {
         left: 10px;
         width: 100%;
         display: block;
+        background-size: contain;
     }
     .services-wrapper-description{
         margin: 0 auto;
@@ -868,10 +869,12 @@ img {
     .city::before{
         width: 100%;
         left: -20px;
+        background-size: contain;
     }
     .payments::after{
-        width: 100%;
-        left: 0;
+        width: 92%;
+        left: 73px;
+        background-size: contain;
     }
     .sign-wrapper{
         flex-direction: column;
@@ -996,7 +999,7 @@ img {
         /* margin-right: 32px; */
         margin-bottom: 32px;
     }
-  
+    
     
     .burger-btn {
         cursor: pointer;
